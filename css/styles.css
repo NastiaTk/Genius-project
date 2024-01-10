@@ -1,0 +1,58 @@
+/* root задається для того щоб в подальшому було легше змінювати кольори на інші*/
+:root {
+    --color-primaty-dark: #011C44;
+    --color-primaty-light: #FFF;
+    --color-brand: #2B7FFF;  
+}
+
+/*Задає ввесь основний колір, колір обираємо якого візуально більше на макеті*/
+body {
+    color: var(--color-primaty-dark);
+}
+
+/* ul {list-style-type: none;} -  прибирає позначки (точки) біля всіх ненумерованих списків */
+ul {
+    list-style-type: none;
+}
+
+/*cursor: pointer-  як буде виглядати курсор при наведенні на кнопку замовити */ 
+.button {
+ border-radius: 32px;
+ background-color: var(--color-brand);
+ border: 2px solid var(--color-brand);
+ color: var(--color-primaty-light);
+ cursor: pointer;
+}
+
+ /* hover - наведення курсору; background-color: transparent - колір фону на кнопці замовити стає прозорий, а колір тексту задаємо далі, розмір та колір рамки на кнопці залишається з попередньої умови */
+ .button:hover {
+    background-color: transparent;
+    color: var(--color-primaty-dark);
+}
+
+.link {
+    color: var(--color-primaty-dark);
+}
+
+.link:hover {
+    color: var(--color-brand);
+}
+
+.hero-title {
+    color: var(--color-brand);
+}
+
+.subtitle {
+    color: var(--color-primaty-dark);
+}
+.call information {
+    color: #4A4A4A;
+}
+
+.section-title {
+    color: var(--color-primaty-dark);
+}
+
+.section-title .accent {
+    color: var(--color-brand);
+}
